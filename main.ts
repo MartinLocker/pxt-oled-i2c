@@ -3,7 +3,7 @@ declare interface Math {
 }
 
 //% color=#27b0ba icon="\uf26c"
-namespace OLED {
+namespace Oled {
     let font: Buffer;
 
     const SSD1306_SETCONTRAST = 0x81
