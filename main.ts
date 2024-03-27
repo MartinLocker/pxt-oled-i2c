@@ -180,8 +180,8 @@ namespace Oled {
     //% d.defl=3
     //% f.defl=0
     export function writeFloat(n: number, d: number, f: number) {
-        let str = Math.round(n * 10 ** f).toString()
-        while (str.length < d-1) str += ""
+        let str = Math.round(n * 10**f).toString()
+        while (str.length < d-1) str = " " + str
         str = str.slice(0, str.length - f) + "." + str.slice(str.length - f)
         writeString(str)
     }
