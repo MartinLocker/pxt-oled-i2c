@@ -1,1 +1,9 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+OLED.init(128, 64)
+OLED.zoom(false, false)
+OLED.writeStringNewLine("Hello World")
+OLED.zoom(true, false)
+OLED.writeStringNewLine("Hello World")
+OLED.zoom(false, true)
+OLED.writeStringNewLine("Hello World")
+OLED.zoom(true, true)
+OLED.writeStringNewLine("Hello World")
